@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
+// import { Button } from 'react-bootstrap/lib/InputGroup';
 import Buttons from './Buttons';
 
 export default class QuestionCards extends Component {
     
     pointCounter = (e) => {
-        // debugger
         (e.target.name === this.props.question.answer.toString()) ?
-            this.props.changeScore()  : //send the number up to the counter
-            console.log('fail') //do nothing
+            this.props.changeScore()  : 
+            console.log('fail') 
         }
-        // (e.target.textContent === this.props.question.answer) ? 
-        // (this.playerScore = this.playerScore++) : null
-        // this.playerScore = playerScore++
+
 
     render() { 
 
