@@ -1,4 +1,4 @@
-export default {
+export const data = {
     questions: [
         {
             text: "An otter's den is called a sofa.",
