@@ -16,7 +16,7 @@ export default class QuestionCards extends Component {
 
         return ( 
 
-            <div>
+            <div style={{backgroundColor: 'lightgray'}}>
                 <h3>{this.props.question.text}</h3>
                 <Buttons pointCounter={this.pointCounter}/>
             </div>

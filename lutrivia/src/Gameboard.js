@@ -29,9 +29,9 @@ export default class Gameboard extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{backgroundColor: 'cream'}}>
                 <h1>Lutrivia</h1>       
-                <h2>Score: {this.state.currentScore}</h2>
+                <h2>Score: {this.state.currentScore}</h2> <button onClick={() => window.location.reload(false)}>New Game</button>
                 {this.props.questions.map(question => <QuestionCards question={question} 
                 changeScore={this.changeScore} />)}
                 <br></br>
